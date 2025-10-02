@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>اتصل بنا - دليل فعاليات المدينة</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <!-- Custom CSS -->
+    <link href="style.css" rel="stylesheet">
+</head>
+
+
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="fas fa-calendar-alt me-2"></i>
+                دليل فعاليات المدينة
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">الرئيسية</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="events.html">جميع الفعاليات</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="aboutus.html">عن الدليل</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">اتصل بنا</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <div class="page-header-content">
+                <h1 class="page-title"><i class="fas fa-envelope me-3"></i>اتصل بنا</h1>
+                <p class="page-subtitle">نحن هنا للإجابة على استفساراتك واقتراحاتك</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="row justify-content-center">
+                <!-- Contact Form -->
+                <div class="col-lg-7 mb-5">
+                    <div class="content-section contact-form-section">
+                        <h2 class="section-title"><i class="fas fa-comment-dots me-2"></i>أرسل رسالة</h2>
+                        <form id="contactForm">
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="name" placeholder=" " required>
+                                <label for="name" class="form-label">الاسم الكامل</label>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" class="form-control" id="email" placeholder=" " required>
+                                <label for="email" class="form-label">البريد الإلكتروني</label>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="subject" placeholder=" " required>
+                                <label for="subject" class="form-label">موضوع الرسالة</label>
+                            </div>
+                            <div class="form-group">
+                                <textarea class="form-control" id="message" rows="5" placeholder=" " required></textarea>
+                                <label for="message" class="form-label">الرسالة</label>
+                            </div>
+                            <button type="submit" class="btn btn-cta">
+                                <i class="fas fa-paper-plane me-2"></i>إرسال الرسالة
+                            </button>
+                        </form>
+                        <div class="success-message" id="successMessage">
+                            <i class="fas fa-check-circle fa-2x mb-3"></i>
+                            <h4>تم إرسال رسالتك بنجاح!</h4>
+                            <p>سنقوم بالرد عليك في أقرب وقت ممكن</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="col-lg-5 mb-5">
+                    <div class="content-section contact-info-section">
+                        <h2 class="section-title"><i class="fas fa-map-marker-alt me-2"></i>معلومات التواصل</h2>
+                        
+                        <div class="contact-info-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h5>العنوان</h5>
+                                <p>شارع المدينة، الحي التجاري، المدينة العربية</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-info-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h5>رقم الهاتف</h5>
+                                <p>+966 12 345 6789</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-info-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h5>البريد الإلكتروني</h5>
+                                <p>info@cityevents.com</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-info-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h5>ساعات العمل</h5>
+                                <p>الأحد - الخميس: 8 صباحاً - 5 مساءً</p>
+                            </div>
+                        </div>
+                        
+                        <div class="social-icons-contact">
+                            <a href="#" title="فيسبوك"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" title="تويتر"><i class="fab fa-twitter"></i></a>
+                            <a href="#" title="إنستغرام"><i class="fab fa-instagram"></i></a>
+                            <a href="#" title="لينكد إن"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Map Section -->
+            <div class="row mt-5">
+                <div class="col-12">
+                    <div class="map-container">
+                        <div class="static-map">
+                            <i class="fas fa-map-marked-alt fa-4x mb-4 map-icon"></i>
+                            <h3 class="map-title">موقعنا على الخريطة</h3>
+                            <p class="map-description">شارع المدينة، الحي التجاري، المدينة العربية</p>
+                            <button class="btn btn-cta map-btn">
+                                <i class="fas fa-directions me-2"></i>احصل على الاتجاهات
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+</body>
+</html>
