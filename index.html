@@ -1,1 +1,292 @@
 
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>دليل فعاليات المدينة</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <!-- Google Fonts - Arabic -->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="style.css" rel="stylesheet">
+</head>
+
+
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="fas fa-calendar-alt me-2"></i>
+                دليل فعاليات المدينة
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">الرئيسية</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="events.html">جميع الفعاليات</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="aboutus.html">عن الدليل</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">اتصل بنا</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <h1 class="hero-title fade-in">اكتشف فعاليات مدينتك</h1>
+            <p class="hero-subtitle fade-in">دليلك الشامل لأهم الفعاليات الثقافية والرياضية والترفيهية</p>
+            <a href="events.html" class="btn btn-light btn-lg fade-in">
+                <i class="fas fa-search me-2"></i>
+                استكشف الفعاليات
+            </a>
+        </div>
+    </section>
+
+    <!-- Featured Events Slider -->
+    <section class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5" style="color: var(--primary-color); font-weight: 700;">
+                <i class="fas fa-star me-2"></i>
+                فعاليات بارزة هذا الأسبوع
+            </h2>
+            
+            <div id="featuredCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#featuredCarousel" data-bs-slide-to="0" class="active"></button>
+                    <button type="button" data-bs-target="#featuredCarousel" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#featuredCarousel" data-bs-slide-to="2"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="assets\The Grand Arabic Music Festival\01-The Grand Arabic Music Festival.jpg" class="d-block w-100" alt="مهرجان الموسيقى">
+                        <div class="carousel-caption">
+                            <h3>مهرجان الموسيقى العربية</h3>
+                            <p>أمسية موسيقية رائعة مع نخبة من الفنانين العرب</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets\Contemporary Visual Arts Exhibition\04-Contemporary Visual Arts Exhibition.jpg" class="d-block w-100" alt="معرض الفنون">
+                        <div class="carousel-caption">
+                            <h3>معرض الفنون التشكيلية</h3>
+                            <p>معرض يضم أعمال أشهر الفنانين المحليين والعالميين</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets\City Football Championship Final\06-City Football Championship Final.jpg" class="d-block w-100" alt="مباراة كرة القدم">
+                        <div class="carousel-caption">
+                            <h3>نهائي بطولة المدينة</h3>
+                            <p>مباراة نهائية مثيرة بين أقوى فرق المدينة</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#featuredCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#featuredCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="category-section">
+        <div class="container">
+            <h2 class="text-center mb-5" style="color: var(--primary-color); font-weight: 700;">
+                <i class="fas fa-list me-2"></i>
+                تصنيفات الفعاليات
+            </h2>
+            <div class="text-center">
+                <a href="events.html" class="category-badge culture">
+                    <i class="fas fa-theater-masks me-2"></i>ثقافية
+                </a>
+                <a href="events.html" class="category-badge sports">
+                    <i class="fas fa-futbol me-2"></i>رياضية
+                </a>
+                <a href="events.html" class="category-badge music">
+                    <i class="fas fa-music me-2"></i>موسيقية
+                </a>
+                <a href="events.html" class="category-badge family">
+                    <i class="fas fa-users me-2"></i>عائلية
+                </a>
+                <a href="events.html" class="category-badge tech">
+                    <i class="fas fa-laptop me-2"></i>تقنية
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Latest Events -->
+    <section class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5" style="color: var(--primary-color); font-weight: 700;">
+                <i class="fas fa-clock me-2"></i>
+                أحدث الفعاليات
+            </h2>
+            <div class="row" id="latestEvents">
+                <!-- Event Card 1 -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card event-card">
+                        <img src="assets\Technology and Innovation Conference\03-Technology and Innovation Conference.jpeg" 
+                             class="card-img-top" alt="ورشة البرمجة">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">مؤتمر التقنية و الابتكار 2025</h5>
+                            <div class="info-item mb-2">
+                                <i class="fas fa-calendar text-primary me-2"></i>
+                                <span>10 أكتوبر 2025 - 10:00 ص</span>
+                            </div>
+                            <div class="info-item mb-3">
+                                <i class="fas fa-map-marker-alt text-danger me-2"></i>
+                                <span>مركز المؤتمرات</span>
+                            </div>
+                            <div class="mb-3">
+                                <span class="badge category-badge tech">تقنية</span>
+                            </div>
+                            <p class="card-text">مؤتمر يجمع خبراء التقنية لمناقشة أحدث الابتكارات في الذكاء الاصطناعي والتطورات التكنولوجية.</p>
+                            <div class="mt-auto">
+                                <a href="events.html" class="btn btn-primary w-100">
+                                    <i class="fas fa-info-circle me-2"></i>عرض التفاصيل
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Event Card 2 -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card event-card">
+                        <img src="assets\Family Activities Carnival\05-Family Activities Carnival.jpg" 
+                             class="card-img-top" alt="يوم عائلي">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">مهرجان الأنشطة العائلية الكبير</h5>
+                            <div class="info-item mb-2">
+                                <i class="fas fa-calendar text-primary me-2"></i>
+                                <span>12 أكتوبر 2025 - 4:00 م</span>
+                            </div>
+                            <div class="info-item mb-3">
+                                <i class="fas fa-map-marker-alt text-danger me-2"></i>
+                                <span>الحديقة المركزية</span>
+                            </div>
+                            <div class="mb-3">
+                                <span class="badge category-badge family">عائلية</span>
+                            </div>
+                            <p class="card-text">يوم مليء بالأنشطة الترفيهية والألعاب للأطفال والكبار في جو عائلي رائع.</p>
+                            <div class="mt-auto">
+                                <a href="events.html" class="btn btn-primary w-100">
+                                    <i class="fas fa-info-circle me-2"></i>عرض التفاصيل
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Event Card 3 -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card event-card">
+                        <img src="assets\Poetry Evening\04-Poetry Evening.jpg" 
+                             class="card-img-top" alt="ندوة أدبية">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">ندوة أدبية مع كتاب مشهورين</h5>
+                            <div class="info-item mb-2">
+                                <i class="fas fa-calendar text-primary me-2"></i>
+                                <span>15 أكتوبر 2025 - 7:00 م</span>
+                            </div>
+                            <div class="info-item mb-3">
+                                <i class="fas fa-map-marker-alt text-danger me-2"></i>
+                                <span>مكتبة المدينة</span>
+                            </div>
+                            <div class="mb-3">
+                                <span class="badge category-badge culture">ثقافية</span>
+                            </div>
+                            <p class="card-text">لقاء مع نخبة من الكتاب والأدباء لمناقشة أحدث الإصدارات الأدبية.</p>
+                            <div class="mt-auto">
+                                <a href="events.html" class="btn btn-primary w-100">
+                                    <i class="fas fa-info-circle me-2"></i>عرض التفاصيل
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-4">
+                <a href="events.html" class="btn btn-primary btn-lg">
+                    عرض جميع الفعاليات
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Students Section -->
+    <section class="students-section text-center">
+        <div class="container">
+            <h5>أسماء الطلاب المشاركين</h5>
+            <div class="row justify-content-center mt-4">
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="student-card">
+                        <div class="student-name">حسام الدين درباس</div>
+                        <div class="student-name">C9</div>                        
+                        <div class="student-id">hussam_aldeen_330069</div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="student-card">
+                        <div class="student-name">اسماعيل علو</div>
+                        <div class="student-name">C3</div>                        
+                        <div class="student-id">esmail_249955</div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="student-card">
+                        <div class="student-name">نور حلاوه</div>
+                        <div class="student-name">C2</div>                        
+                        <div class="student-id">nour_286066</div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="student-card">
+                        <div class="student-name">نور الدين عمرو</div>
+                        <div class="student-name">C4</div>                        
+                        <div class="student-id">nour_297583</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+        <!-- Footer -->
+    <footer class="footer text-center">
+        <div class="container">
+            <h5>تابعنا على وسائل التواصل الاجتماعي</h5>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+            <p class="mt-4">&copy; 2025 دليل فعاليات المدينة. جميع الحقوق محفوظة.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
