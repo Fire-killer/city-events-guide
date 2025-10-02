@@ -1,0 +1,219 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>جميع الفعاليات - دليل فعاليات المدينة</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <!-- Google Fonts - Arabic -->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="fas fa-calendar-alt me-2"></i>
+                دليل فعاليات المدينة
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">الرئيسية</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="events.html">جميع الفعاليات</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="aboutus.html">عن الدليل</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">اتصل بنا</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="hero-section">
+        <div class="container text-center">
+            <h1 class="hero-title"><i class="fas fa-calendar-alt me-3"></i>جميع الفعاليات</h1>
+            <p class="hero-subtitle">اكتشف أفضل الفعاليات في مدينتك</p>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <div class="container my-5">
+        <!-- Statistics Bar -->
+        <div class="stats-bar">
+            <div class="row text-center">
+                <div class="col-6 col-md-3">
+                    <div class="stats-item">
+                        <div class="stats-number" id="totalEvents">12</div>
+                        <div class="stats-label">إجمالي الفعاليات</div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="stats-item">
+                        <div class="stats-number" id="visibleEvents">12</div>
+                        <div class="stats-label">فعاليات ظاهرة</div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="stats-item">
+                        <div class="stats-number">5</div>
+                        <div class="stats-label">تصنيفات</div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="stats-item">
+                        <div class="stats-number">8</div>
+                        <div class="stats-label">مواقع</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Filter Section -->
+        <div class="filter-section">
+            <h4 class="filter-title"><i class="fas fa-filter me-2"></i>البحث والفلترة</h4>
+            <div class="row">
+                <div class="col-md-3 mb-3">
+                    <label class="form-label">البحث في الفعاليات</label>
+                    <input type="text" class="form-control" id="searchInput" placeholder="ابحث بالاسم أو المكان...">
+                </div>
+                <div class="col-md-3 mb-3">
+                    <label class="form-label">التصنيف</label>
+                    <select class="form-select" id="categoryFilter">
+                        <option value="">جميع التصنيفات</option>
+                        <option value="culture">ثقافية</option>
+                        <option value="sports">رياضية</option>
+                        <option value="music">موسيقية</option>
+                        <option value="family">عائلية</option>
+                        <option value="tech">تقنية</option>
+                    </select>
+                </div>
+                <div class="col-md-3 mb-3">
+                    <label class="form-label">التاريخ</label>
+                    <input type="date" class="form-control" id="dateFilter">
+                </div>
+                <div class="col-md-3 mb-3">
+                    <label class="form-label">الموقع</label>
+                    <select class="form-select" id="locationFilter">
+                        <option value="">جميع المواقع</option>
+                        <option value="مسرح المدينة">مسرح المدينة</option>
+                        <option value="متحف الفنون">متحف الفنون</option>
+                        <option value="استاد المدينة">استاد المدينة</option>
+                        <option value="الحديقة المركزية">الحديقة المركزية</option>
+                        <option value="مركز المؤتمرات">مركز المؤتمرات</option>
+                        <option value="مكتبة المدينة">مكتبة المدينة</option>
+                        <option value="النادي الثقافي">النادي الثقافي</option>
+                        <option value="مول المدينة">مول المدينة</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row mt-2">
+                <div class="col-md-6">
+                    <button class="btn btn-outline-secondary">
+                        <i class="fas fa-times me-2"></i>مسح جميع الفلاتر>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Events Grid -->
+        <div class="row" id="eventsGrid">
+            <!-- Example Event Card -->
+            <div class="col-lg-4 col-md-6 mb-4 event-item" data-category="music" data-date="2025-10-05" data-location="مسرح المدينة">
+                <div class="card event-card">
+                    <img src="assets\The Grand Arabic Music Festival\02-The Grand Arabic Music Festival.jpg" 
+                         class="card-img-top" alt="مهرجان الموسيقى العربية">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">مهرجان الموسيقى العربية الكبير</h5>
+                        <div class="info-item"><i class="fas fa-calendar"></i><span>5 أكتوبر 2025 - 8:00 م</span></div>
+                        <div class="info-item"><i class="fas fa-map-marker-alt"></i><span>مسرح المدينة الكبير</span></div>
+                        <div class="mb-3"><span class="badge category-badge music">موسيقية</span></div>
+                        <p class="card-text">أمسية موسيقية استثنائية تجمع نخبة من أشهر المطربين والموسيقيين العرب.</p>
+                        <div class="mt-auto">
+                            <button class="btn btn-primary w-100">
+                                <i class="fas fa-info-circle me-2"></i>عرض التفاصيل
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <!-- Students Section -->
+    <section class="students-section text-center">
+        <div class="container">
+            <h5>أسماء الطلاب المشاركين</h5>
+            <div class="row justify-content-center mt-4">
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="student-card">
+                        <div class="student-name">حسام الدين درباس</div>
+                        <div class="student-name">C9</div>                        
+                        <div class="student-id">hussam_aldeen_330069</div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="student-card">
+                        <div class="student-name">اسماعيل علو</div>
+                        <div class="student-name">C3</div>                        
+                        <div class="student-id">esmail_249955</div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="student-card">
+                        <div class="student-name">نور حلاوه</div>
+                        <div class="student-name">C2</div>                        
+                        <div class="student-id">nour_286066</div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="student-card">
+                        <div class="student-name">نور الدين عمرو</div>
+                        <div class="student-name">C4</div>                        
+                        <div class="student-id">nour_297583</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+        <!-- Footer -->
+    <footer class="footer text-center">
+        <div class="container">
+            <h5>تابعنا على وسائل التواصل الاجتماعي</h5>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+            <p class="mt-4">&copy; 2025 دليل فعاليات المدينة. جميع الحقوق محفوظة.</p>
+        </div>
+    </footer>
+
+
+</body>
+</html>
